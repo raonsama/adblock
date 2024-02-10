@@ -1,0 +1,33 @@
+! Author: Raymond M
+! Title: LightSaber Filters
+! Expires: 4 days (update frequency)
+! GitHub issues: https://github.com/raonsama/adblock/issues
+! GitHub pull requests: https://github.com/raonsama/adblock/pulls
+! -------------------------------------------------------!
+
+! -----------------------Shinigami-----------------------!
+shinigamitoon.*##.recommendations > .video-bg > .container > div.justify-content-center > div
+shinigamitoon.*##.latest > .video-bg > .container > div.justify-content-center > div
+shinigamitoon.*##[alt*="Advertisement"]
+shinigamitoon.*##.lepopup-popup-overlay
+shinigamitoon.*##.lepopup-popup-container
+
+! -----------------------KomikCast-----------------------!
+komikcast.*###Evo
+
+! ------------------------Copilot------------------------!
+copilot.microsoft.com##.preview-disclaimer,.b_wlcmTileCont
+
+! -----------BiliBili DarkMode & Video Windowed----------!
+www.bilibili.tv##html,header,.interactive,.interactive__actions,input.bstar-header-search-bar__input,.history__header,.bstar-sidebar:style(background-color: #000000 !important;)
+www.bilibili.tv##header:style(border-color: #000000 !important;)
+www.bilibili.tv##.bstar-player__main > #bilibiliPlayer[data-ui-mode*="1"]:style(position: fixed !important;z-index: 95000 !important;bottom: 0px !important;right: 0px !important;left: 0px !important;top: 0px !important;)
+
+! -----------------Youtube Video Windowed----------------!
+www.youtube.com###full-bleed-container > #player-full-bleed-container > #player-container > #ytd-player > div > #movie_player:style(background: #000 !important;position: fixed !important;z-index: 95000 !important;bottom: 0px !important;right: 0px !important;left: 0px !important;top: 0px !important;)
+www.youtube.com###full-bleed-container > #player-full-bleed-container > #player-container > #ytd-player > div > #movie_player > .html5-video-container:style(height: 100% !important;width: 100% !important;bottom: 0px !important;right: 0px !important;left: 0px !important;top: 0px !important;)
+www.youtube.com###full-bleed-container > #player-full-bleed-container > #player-container > #ytd-player > div > #movie_player > .html5-main-video:style(height: 100% !important;width: 100% !important;bottom: 0px !important;right: 0px !important;left: 0px !important;top: 0px !important;)
+www.youtube.com###full-bleed-container > #player-full-bleed-container > #player-container > #ytd-player > div > #movie_player > .ytp-popup,.ytp-contextmenu:style(z-index: 95050 !important;)
+
+! ----------------------Wide ChatGPT---------------------!
+chat.openai.com##.flex.flex-1.text-base.mx-auto.gap-3.md\:px-5.lg\:px-1.xl\:px-5.md\:max-w-3xl.group.final-completion:style(max-width: 100% !important;)
